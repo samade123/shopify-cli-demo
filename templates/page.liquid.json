@@ -74,7 +74,7 @@
     "84f66920-d8aa-47c3-bc1a-d3ee9d3eefef": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% unless page.title == 'Liquid' %}\n\nThis page title is not still liquid\n\n{%  endunless %}",
+        "custom_liquid": "{% unless page.title == 'Liquid' %}\n\nThis page title is not liquid\n\n{%  endunless %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
