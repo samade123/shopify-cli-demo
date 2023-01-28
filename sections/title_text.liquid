@@ -1,22 +1,45 @@
-<div class="top-title">Start with solutions &#8211;</div>
+<div class="top-title">Start with solutions —&nbsp;&nbsp;</div>
+<div class="middle-title">Build your great portfolio <span>website</span> &#8211;</div>
 {% schema %}
-  {
-    "name": "title text",
-    "settings": []
-  }
+{
+  "name": "title text",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary colour",
+      "default": "#DFFB6D"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
-
-
-{% endstylesheet %}
-
-<style>
   div.top-title {
-
     width: 100%;
     display: grid;
     place-items: center;
+  }
+
+  div.middle-title {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-allign: left;
+    font-weight: 600;
+    font-size: clamp(54px, calc(4vw+30px), 128px);
+
+    span {
+      color: var(--color-secondar)
+    }
+  }
+{% endstylesheet %}
+
+<style>
+  :root {
+      --color-secondary: {{ settings.color_secondary }};
+    }
+
   }
 </style>
 
