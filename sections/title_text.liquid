@@ -1,5 +1,5 @@
 <div class="top-title">Start with solutions —&nbsp;&nbsp;</div>
-<div class="middle-title">Build your great portfolio <span>website</span> &#8211;</div>
+<div class="middle-title">Build your great portfolio <span>website</span></div>
 {% schema %}
 {
   "name": "title text",
@@ -19,27 +19,25 @@
     width: 100%;
     display: grid;
     place-items: center;
+    font-size: clamp(16px, calc(1vw + 5px), 25px);
   }
 
   div.middle-title {
     width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
     display: grid;
     place-items: center;
-    text-allign: left;
+    text-align: center;
     font-weight: 600;
-    font-size: clamp(54px, calc(4vw+30px), 128px);
-
-    span {
-      color: var(--color-secondar)
-    }
+    font-size: clamp(50px, calc(4vw + 30px), 128px);
+    line-height: clamp(70px, calc(7vw + 30px), 128px);
   }
 {% endstylesheet %}
 
 <style>
-  :root {
-      --color-secondary: {{ settings.color_secondary }};
-    }
-
+  div.middle-title span {
+  color: {{ section.settings.color_secondary }};
   }
 </style>
 
